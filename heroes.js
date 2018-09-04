@@ -10,15 +10,12 @@ const heroes = [
   { id: 19, name: 'Magma' },
   { id: 20, name: 'Tornado' },
   { id: 21, name: 'Boldy Cape Saitama' },
+  { id: 22, name: 'Pscycho Cyborg Genos' },
 ];
 
 
 function getHeroes(req, res, next) {
-  res.json({
-    status: 'success',
-    heroes,
-    message: 'Lista de heroes'
-  })
+  res.json(heroes)
 }
 
 
